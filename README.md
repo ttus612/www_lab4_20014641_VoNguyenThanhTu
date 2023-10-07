@@ -25,7 +25,7 @@
 # 📒Kĩ năng áp dụng trong Project :
 <p align="center">
   <img src="https://img.icons8.com/color/48/000000/mysql-logo.png"/>
-  <img width="48" height="48" src="https://img.icons8.com/color/48/maria-db.png" alt="maria-db"/>
+  <img width="48" height="48" src="https://img.icons8.com/color/48/spring-logo.png" alt="spring-logo"/>
   <img width="48" height="48" src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/>
   <img width="48" height="48" src="https://img.icons8.com/color/48/web.png" alt="web"/>
 </p>
