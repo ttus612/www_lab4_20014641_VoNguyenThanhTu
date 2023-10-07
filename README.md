@@ -32,8 +32,13 @@
 
 # 📒Yêu cầu Project :
 <p align="center">
-  <img src="images/yeuCau.jpg" width = 80%/>
+  Thực hành tìm hiểu về spring boot
 </p>
 
 # 😍Trình bày về project:
-
+<p align="center">
+  Hiểu được các cách khai báo beans
+</p>
+<p align="center">
+  Hiểu được Object Injection
+</p>
