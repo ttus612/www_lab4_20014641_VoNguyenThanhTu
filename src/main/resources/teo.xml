@@ -16,20 +16,64 @@
 
 
 <!--    Object Injection (cont.)-->
-        <bean id="lop" class="org.example.Clazz">
-            <property name="classId" value="DHTH16A"/>
-            <property name="className" value="Lop DHTH16A"/>
-        </bean>
+<!--        <bean id="lop" class="org.example.Clazz">-->
+<!--            <property name="classId" value="DHTH16A"/>-->
+<!--            <property name="className" value="Lop DHTH16A"/>-->
+<!--        </bean>-->
 
-        <bean id="st2" class="org.example.Student">
-            <property name="id" value="001"/>
-            <property name="name" value="THANH TU"/>
-            <property name="clazz" ref="lop"/>
-        </bean>
-        <bean id="st3" class="org.example.Student">
-            <constructor-arg name="id" value="002"/>
-            <constructor-arg name="name" value="THANH THANH"/>
-            <constructor-arg name="clazz" ref="lop"/>
-        </bean>
+<!--        <bean id="st2" class="org.example.Student">-->
+<!--            <property name="id" value="001"/>-->
+<!--            <property name="name" value="THANH TU"/>-->
+<!--            <property name="clazz" ref="lop"/>-->
+<!--        </bean>-->
+<!--        <bean id="st3" class="org.example.Student">-->
+<!--            <constructor-arg name="id" value="002"/>-->
+<!--            <constructor-arg name="name" value="THANH THANH"/>-->
+<!--            <constructor-arg name="clazz" ref="lop"/>-->
+<!--        </bean>-->
 
+<!--    Collection Injection-->
+    <bean id="add1" class="org.example.Address">
+            <property name="street" value="Nguyen Van Bao 12"/>
+            <property name="city" value="Saigon"/>
+            <property name="country" value="VietNam"/>
+    </bean>
+
+    <bean id="add2" class="org.example.Address">
+        <property name="street" value="Nguyen Thai Son"/>
+        <property name="city" value="Saigon"/>
+        <property name="country" value="VietNam"/>
+    </bean>
+
+    <bean id="person" class="org.example.Person">
+        <property name="name" value="Von Nguyen Thanh Tu"/>
+        <property name="addresses" >
+            <list>
+                <ref bean="add1"/>
+                <ref bean="add2"/>
+            </list>
+        </property>
+        <property name="emails">
+            <list>
+                <value>thanh@gmail.com</value>
+                <value>tu@gmail.com</value>
+            </list>
+        </property>
+    </bean>
+
+<!--    DẠNG 4: Literal Values Injection/-->
+<!--    <bean id="myProperties" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+<!--        <property name="locations">-->
+<!--            <list>-->
+<!--                <value>classpath:sample.properties</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="ignoreResourceNotFound" value="true"/>-->
+<!--        <property name="ignoreUnresolvablePlaceholders" value="true"/>-->
+<!--    </bean>-->
+
+    <bean id="lop" class="org.example.Clazz">
+        <property name="classId" value="DHTH15A"/>
+        <property name="className" value="${tenlop}"/>
+    </bean>
 </beans>
